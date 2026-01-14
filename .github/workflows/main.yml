@@ -27,7 +27,7 @@ jobs:
         tokenSuffix: '}'
         files: '["${{env.REPLACESETTINGS}}"]'
       env:
-        ONPREM_REDIS : ${{secrets.ONPREM_REDIS}}
+        ONPREM_REDIS : ${{secrets.REDIS_PASS}}
         REPLACESETTINGS: redis.conf
      - name: Build and push Docker images
   # You may pin to the exact commit or the version.
